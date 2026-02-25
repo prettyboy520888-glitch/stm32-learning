@@ -1,7 +1,17 @@
-# Prerequisites
-*.d
+# =========================
+# System Files
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
 
-# Object files
+# =========================
+# C/C++ General Build Files
+# =========================
+# Prerequisites & Object files
+*.d
 *.o
 *.ko
 *.obj
@@ -16,13 +26,11 @@
 *.gch
 *.pch
 
-# Libraries
+# Libraries & Shared objects
 *.lib
 *.a
 *.la
 *.lo
-
-# Shared objects (inc. Windows DLLs)
 *.dll
 *.so
 *.so.*
@@ -35,12 +43,14 @@
 *.i*86
 *.x86_64
 *.hex
+*.bin
 
-# Debug files
+# Debug files & Info
 *.dSYM/
 *.su
 *.idb
 *.pdb
+*.dwo
 
 # Kernel Module Compile Results
 *.mod*
@@ -51,20 +61,22 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# debug information files
-*.dwo
+# =========================
+# STM32 & IDE Specific
+# =========================
+# Make / CMake output
+build/
+*.bak
+
 # Keil MDK build files
-*.o
-*.d
 *.crf
 *.htm
 *.dep
 *.lst
-*.map
-*.hex
 *.axf
-*.uvoptx
+# *.uvoptx  # Uncomment this line if you want to ignore Keil debug settings and breakpoints
 *.uvgui.*
+*.uvguix.*
 Objects/
 Listings/
 
@@ -72,3 +84,11 @@ Listings/
 Debug/
 Release/
 .metadata/
+
+# VS Code workspace files (Optional)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
