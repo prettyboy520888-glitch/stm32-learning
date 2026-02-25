@@ -53,3 +53,22 @@ dkms.conf
 
 # debug information files
 *.dwo
+# Keil MDK build files
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.lst
+*.map
+*.hex
+*.axf
+*.uvoptx
+*.uvgui.*
+Objects/
+Listings/
+
+# STM32CubeIDE / Eclipse build files
+Debug/
+Release/
+.metadata/
