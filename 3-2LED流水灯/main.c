@@ -8,27 +8,24 @@ int main(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_All;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-	
-	
+
 	while(1)
 	{
-		GPIO_Write(GPIOA,~0x0001);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0002);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0004);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0008);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0010);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0020);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0040);
-		Delay_ms(500);
-		GPIO_Write(GPIOA,~0x0080);
-		Delay_ms(500);
+		GPIO_Write(GPIOA,0x0001);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0002);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0004);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0008);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0010);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0020);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0040);
+		Delay_ms(100);
+		GPIO_Write(GPIOA,0x0080);
+		Delay_ms(100);
 	}
-
-
 }
